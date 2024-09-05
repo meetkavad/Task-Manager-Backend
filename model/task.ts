@@ -21,6 +21,11 @@ const taskSchema: Schema = new mongoose.Schema({
         type: String,
         enum: ['Low','High','Completed'],
         default: 'Low'
+    },
+    prev_priority: {
+        type: String,
+        enum: ['Low','High','Completed'],
+        default: 'Low'
     }
   
 });
